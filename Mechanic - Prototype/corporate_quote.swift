@@ -17,6 +17,7 @@ class CorporateQuote {
   var startTime: NSDate?
   var mechanics: [Mechanic]
   var client: String?
+  var address: String?
 
   init(services: [Service],
       price: Double,

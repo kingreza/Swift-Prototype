@@ -38,12 +38,15 @@ var prototypedQuote = CorporateQuote(services: corporateService,
 var googleQuote = prototypedQuote.clone()
 googleQuote.client = "Google"
 googleQuote.startTime = NSDate.generateDateFromArray([2016, 5, 12, 14, 30, 00])
+googleQuote.address = "1600 Amphitheatre Pkwy"
 
 
 var facebookQuote = prototypedQuote.clone()
 facebookQuote.client = "Facebook"
 facebookQuote.startTime =  NSDate.generateDateFromArray([2016, 5, 13, 9, 30, 00])
+facebookQuote.address = "1 Hacker Way, Menlo Park"
 
 var microsoftQuote = prototypedQuote.clone()
 microsoftQuote.client = "Microsoft"
 microsoftQuote.startTime = NSDate.generateDateFromArray([2016, 5, 15, 11, 50, 00])
+microsoftQuote.address = "1085 La Avenida St"
