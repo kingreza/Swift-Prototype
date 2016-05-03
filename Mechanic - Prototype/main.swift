@@ -8,4 +8,42 @@
 
 import Foundation
 
-print("Hello, World!")
+
+
+var steve = Mechanic (name: "Steve Brimington")
+var mike = Mechanic(name: "Mike Fulton")
+var ali = Mechanic (name: "Ali Belevue")
+
+var corporateMechanics = [steve, mike, ali]
+
+var brakePadReplacement = Service(name: "Brake Pad Replacement", laborDurationInMinutes: 100)
+var oilChange = Service(name: "Oil Change", laborDurationInMinutes: 65)
+var rotateTires = Service(name: "Roate Tires", laborDurationInMinutes: 45)
+
+var corporateService = [brakePadReplacement, oilChange, rotateTires]
+
+var parts = [Part(name: "Brake Pads Front", price: 25.65, brand: "ACME Pads"),
+            Part(name: "Filter", price: 8.99, brand: "ACME Pads"),
+            Part(name: "Synthetic Oil", price: 15.19, brand: "ACME Pads"),
+            Part(name: "Brake Pads Rear", price: 32.65, brand: "ACME Pads"),
+            Part(name: "Air Freshners", price: 3.65, brand: "ACME Pads")]
+
+var prototypedQuote = CorporateQuote(services: corporateService,
+                                     price: 1488.99,
+                                     parts: parts,
+                                     numberOfCars: 20,
+                                     mechanics: corporateMechanics)
+
+
+var googleQuote = prototypedQuote.clone()
+googleQuote.client = "Google"
+googleQuote.startTime = NSDate.generateDateFromArray([2016, 5, 12, 14, 30, 00])
+
+
+var facebookQuote = prototypedQuote.clone()
+facebookQuote.client = "Facebook"
+facebookQuote.startTime =  NSDate.generateDateFromArray([2016, 5, 13, 9, 30, 00])
+
+var microsoftQuote = prototypedQuote.clone()
+microsoftQuote.client = "Microsoft"
+microsoftQuote.startTime = NSDate.generateDateFromArray([2016, 5, 15, 11, 50, 00])
