@@ -17,5 +17,6 @@ struct Mechanic {
     self.name = name
     Mechanic.id += 1
     self.id = Mechanic.id
+
   }
 }

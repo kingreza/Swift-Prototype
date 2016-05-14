@@ -22,31 +22,31 @@ var rotateTires = Service(name: "Roate Tires", laborDurationInMinutes: 45)
 
 var corporateService = [brakePadReplacement, oilChange, rotateTires]
 
-var parts = [Part(name: "Brake Pads Front", price: 25.65, brand: "ACME Pads"),
+var corporateParts = [Part(name: "Brake Pads Front", price: 25.65, brand: "ACME Pads"),
             Part(name: "Filter", price: 8.99, brand: "ACME Pads"),
             Part(name: "Synthetic Oil", price: 15.19, brand: "ACME Pads"),
             Part(name: "Brake Pads Rear", price: 32.65, brand: "ACME Pads"),
             Part(name: "Air Freshners", price: 3.65, brand: "ACME Pads")]
 
-var prototypedQuote = CorporateQuote(services: corporateService,
+var prototypedCorporeateQuote = CorporateQuote(services: corporateService,
                                      price: 1488.99,
-                                     parts: parts,
+                                     parts: corporateParts,
                                      numberOfCars: 20,
                                      mechanics: corporateMechanics)
 
 
-var googleQuote = prototypedQuote.clone()
+var googleQuote = prototypedCorporeateQuote.clone()
 googleQuote.client = "Google"
 googleQuote.startTime = NSDate.generateDateFromArray([2016, 5, 12, 14, 30, 00])
-googleQuote.address = "1600 Amphitheatre Pkwy"
+googleQuote.address = "1600 Amphitheatre Pkwy, Mountain View"
 
 
-var facebookQuote = prototypedQuote.clone()
+var facebookQuote = prototypedCorporeateQuote.clone()
 facebookQuote.client = "Facebook"
 facebookQuote.startTime =  NSDate.generateDateFromArray([2016, 5, 13, 9, 30, 00])
 facebookQuote.address = "1 Hacker Way, Menlo Park"
 
-var microsoftQuote = prototypedQuote.clone()
+var microsoftQuote = prototypedCorporeateQuote.clone()
 microsoftQuote.client = "Microsoft"
 microsoftQuote.startTime = NSDate.generateDateFromArray([2016, 5, 15, 11, 50, 00])
-microsoftQuote.address = "1085 La Avenida St"
+microsoftQuote.address = "1085 La Avenida St, Mountain View"

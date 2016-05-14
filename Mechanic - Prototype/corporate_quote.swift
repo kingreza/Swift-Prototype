@@ -32,7 +32,7 @@ class CorporateQuote {
         self.mechanics = mechanics
 
   }
-  
+
   func clone() -> CorporateQuote {
     return CorporateQuote(services: self.services,
                           price: self.price,

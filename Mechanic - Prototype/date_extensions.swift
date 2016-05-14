@@ -19,7 +19,7 @@ extension NSDate {
   struct Date {
     static let formatterShortDateAndTime = NSDateFormatter(dateFormat: "dd/M/yyyy, H:mm")
   }
-  
+
   var shortDateAndTime: String {
     return Date.formatterShortDateAndTime.stringFromDate(self)
   }
@@ -28,7 +28,7 @@ extension NSDate {
     guard input.count == 6 else {
       return nil
     }
-    
+
     let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)
     let components = NSDateComponents()
     components.year = input[0]

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Part {
+struct Part {
   var name: String
   var price: Double
   var brand: String

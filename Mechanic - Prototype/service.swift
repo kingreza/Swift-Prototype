@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Service {
+struct Service {
   var name: String
   var laborDurationInMinutes: Int
 
