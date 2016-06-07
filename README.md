@@ -1,6 +1,8 @@
 <h1>Design Patterns in Swift: Prototype</h1>
 This repository is part of a series. For the full list check out <a href="https://shirazian.wordpress.com/2016/04/11/design-patterns-in-swift/">Design Patterns in Swift</a>
 
+For a cheat-sheet of design patterns implemented in Swift check out <a href="https://github.com/ochococo/Design-Patterns-In-Swift"> Design Patterns implemented in Swift: A cheat-sheet</a>
+
 <h3>The problem:</h3>
 Beside having qualified mechanics fix your car at home or your office, <a href="http://www.yourmechanic.com">YourMechanic</a> has several contracts with various businesses. The appointment for these jobs for the most part follows the same configuration (same mechanics, same set of services, same parts, same number of cars and price). What's different is the name of the client, the address and the start time. Building a corporate appointment over and over again with the same configuration is time consuming and heavy on our servers. We would like a solution where the same appointment type can be re-created without having to look up our mechanic directory, parts directory or service directory.
 <h3>The solution:</h3>
